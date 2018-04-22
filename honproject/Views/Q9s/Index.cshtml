@@ -1,0 +1,64 @@
+﻿@model IEnumerable<honproject.Models.Q9>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Question 9</h1>
+<h2>How satisfied are you that RNIB Navigator delivered you to your desired location?</h2>
+<h4>Acceptable Answers</h4>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+
+@Html.ActionLink("1", "Index", "Q1s") |
+@Html.ActionLink("2", "Index", "Q2s") |
+@Html.ActionLink("3", "Index", "Q3s") |
+@Html.ActionLink("4", "Index", "Q4s") |
+@Html.ActionLink("5", "Index", "Q5s") |
+@Html.ActionLink("6", "Index", "Q6s") |
+@Html.ActionLink("7", "Index", "Q7s") |
+@Html.ActionLink("8", "Index", "Q8s") |
+@Html.ActionLink("9", "Index", "Q9s") |
+@Html.ActionLink("10", "Index", "Q10s") |
+@Html.ActionLink("11", "Index", "Q11s") |
+@Html.ActionLink("12", "Index", "Q12s") |
+@Html.ActionLink("13", "Index", "Q13s") |
+@Html.ActionLink("14", "Index", "Q14s") |
+@Html.ActionLink("15", "Index", "Q15s") |
+@Html.ActionLink("16", "Index", "Q16s") |
+@Html.ActionLink("17", "Index", "Q17s") |
+@Html.ActionLink("18", "Index", "Q18s") |
+@Html.ActionLink("19", "Index", "Q19s") |
+@Html.ActionLink("20", "Index", "Q20s") |
+@Html.ActionLink("21", "Index", "Q21s") |
+@Html.ActionLink("22", "Index", "Q22s") |
+@Html.ActionLink("23", "Index", "Q23s") |
+@Html.ActionLink("24", "Index", "Q24s") |
+@Html.ActionLink("25", "Index", "Q25s") |
+@Html.ActionLink("26", "Index", "Q26s")
+ 
+<h1>Results from initial experiment</h1>
+<img src="~/Content/Images/question789.png" alt="Question 9" />
